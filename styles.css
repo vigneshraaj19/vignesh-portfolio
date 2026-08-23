@@ -126,6 +126,55 @@ img {
   height: auto;
 }
 
+.award__container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.award__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award__img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.award__data {
+    text-align: left;
+}
+
+.award__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.award__description {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    .award__container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .award__data {
+        text-align: center;
+    }
+
+    .award__img {
+        max-width: 350px;
+    }
+}
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
